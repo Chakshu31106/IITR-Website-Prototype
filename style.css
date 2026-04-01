@@ -693,7 +693,7 @@ width:400px;
 .dot.active::after {
   background: orange;
 }
-/* Milestones slides: show one slide (image) per selected year */
+
 .content_milestones 
 { display: flex;
  flex-direction: column;
