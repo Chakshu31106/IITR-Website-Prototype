@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IIT Roorkee</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="links">
+    <div class="links-left">
+      <a href="#">Saharanpur Campus</a>
+      <a href="#">Noida Campus</a>
+      <a href="https://newwebmail.iitr.ac.in/?session=f9d8c490c90d969687b99fed91ea214ac51ce410c124a10e0db5e4b97fc2af3971d7ae30374ef6f50631f68f4123f049c51ce410c124a10e0db5e4b97fc2af39">Webmail</a>
+      <a href="https://iconnect.iitr.ac.in/">iConnect</a>
+      <a href="https://iitr.ac.in/support/td/">Directory</a>
+      <a href="https://iitr.ac.in/Institute/Contact%20Us.html">Contact Us</a>
+    </div>
+
+    <div class="links-right">
+      <button class="accessibility"><h3>A-</h3></button>
+      <button class="accessibility"><h3>A</h3></button>
+      <button class="accessibility"><h3>A+</h3></button>
+      <button class = "dark-mode" onclick="setDark()">A</button>
+<button class ="light-mode" onclick="setLight()">A</button>
+
+      <a class="search-link" href="search.html" aria-label="Open search page">
+        <!--  magnifying glass icon -->
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<header class="navbar">
+<a href="#">
+<button id="iitrlogo"> 
+ <a href="#">
+      <img src="idTslm6g5R_logos.svg" style="width: 80px; height: auto; border-radius:50%;" alt="IIT Roorkee logo" class="footer-logo">
+      </a>
+<h2>
+भारतीय प्रौद्योगिकी संस्थान रूड़की
+<br/>
+Indian Institute of Technology Roorkee
+</h2>
+</button>
+</a>
+
+
+  <nav class="nav-links">
+    <a href="https://iitr.ac.in/Institute/About%20the%20Institute/index.html">Institute</a>
+    <a href="https://iitr.ac.in/Academics/Admission%20To%20Undergraduate%20Programmes.html">Admissions</a>
+    <a href="https://iitr.ac.in/Academics/Home.html">Academics</a>
+    <a href="https://iitr.ac.in/Departments/index.html">Departments</a>
+    <a href="https://www.iitr.ac.in/sric/">Research</a>
+    <a href="https://iitr.ac.in/Campus%20Life/index.html">Campus Life</a>
+    <a href="https://iitr.ac.in/Careers/index.html">Careers</a>
+    <a href="https://pic.iitr.ac.in/">Placements</a>
+    <a href="https://iitr.ac.in/Resources/index.html">Resources</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+
+  <div class="image-container">
+    <img src="video.png" style="width: 100%; height: auto;" alt="Hero Image">
+
+    <div class="overlay-text">
+      <h1>
+        <div style="font-size: 60px; font-family: Lato;">RESEARCH</div>
+        <div style="font-size: 60px; font-family: Lato;" >EDUCATE</div>
+        <div style="font-size: 60px; font-family: Lato;" >INNOVATE</div>
+        <div style="font-size: 60px; font-family: Lato;" >TOMORROW</div>
+      </h1>
+    </div>
+  </div>
+  
+</section>
+
+<!-- Stats -->
+<section class="stats">
+  <div class="stat1"> <i class="fa-solid fa-graduation-cap"></i>   10300+ </br>Students</div>
+  <div class="stat2"> <i class="fa-solid fa-chalkboard-teacher"></i>500+ </br>Faculty</div>
+  <div class="stat3"> <i class="fa-solid fa-user-friends"></i>600+ </br>Staff</div>
+  <div class="stat4"> <i class="fa-solid fa-file-contract"></i>450+ </br>Patents</div>
+</section>
+
+<br><br><br><br>
+<!-- Research -->
+<section class="research">
+<div class="research-header">
+  <h2 style="font-family: Lato; font-weight: 400;">RECENT RESEARCH </h2>
+  <a href="https://www.iitr.ac.in/sric/" class="view-all" style="margin-left: 560px;">VIEW ALL</a>
+</div>
+
+  <div class="imgs">
+    <img src="Research.png" alt="Research Image 1" class="research-img">
+     </div>
+
+</section>
+
+<br><br><br>
+<!-- Recently granted patents -->
+<section class="patents">
+<div class="patent-header">
+  <h2 style="font-family: Lato; font-weight: 500;">RECENTLY GRANTED PATENTS</h2>
+  <a href="https://iitr.ac.in/Careers/static/TT_Poster_07May2025.pdf" class="view-all" style="margin-left: 560px;">VIEW ALL</a>
+</div>
+
+<div class="scroller-wrapper">
+  <button class="arrow left" onclick="scrollToLeft()"><i class="fa-solid fa-angle-left"></i></button>
+
+  <div class="scroller" id="scroller">
+    <img src="patents/pat1.png" />
+    <img src="patents/pat2.png" />
+    <img src="patents/pat3.png" />
+    <img src="patents/pat4.png" />
+    <img src="patents/pat5.png" />
+    <img src="patents/pat6.png" />
+    <img src="patents/pat7.png" />
+  </div>
+
+  <button class="arrow right" onclick="scrollToRight()"><i class="fa-solid fa-angle-right"></i></button>
+
+</div>
+</section>
+
+<br><br><br><br>
+<!-- Rankings -->
+ <section class="rankings">
+  <div class="ranks">
+
+    <div class="rank1">
+        <img src="ranks/rank1.png" style="width: 100px; height:100px;">
+      <p>NIRF RANK 1 IN ARCHITECTURE</p>
+      <h1>#1</h1>
+    </div>
+
+    <div class="rank2">
+        <img src="ranks/rank2.png" style="width: 100px; height: 100px;">
+      <p>NIRF RANK 5 IN ENGINEERING</p>
+      <h1>#5</h1>
+    </div>
+
+    <div class="rank3">
+        <img src="ranks/rank3.png" style="width: 100px; height: 100px;">
+      <p>RANK 14 IN ASIA</p>
+      <h1>#14</h1>
+    </div>
+
+    <div class="rank4">
+        <img src="ranks/rank4.png" style="width: 100px; height: 100px;">
+      <p>RANK #335 IN QS WORLD RANKINGS</p>
+        <h1>#335</h1>
+  </div>
+
+</div>
+<br>
+<h1 style="font-family: Lato; font-weight: 400;">IIT ROORKEE RANKS AMONG THE TOP UNIVERSITIES</h1>
+  </section>
+
+  <br><br><br><br>
+<!-- Recent Achievements -->
+<div class="achievements">
+
+<div class="achievements-header">
+  <h2>RECENT ACHIEVEMENTS</h2>
+  <a href="#" class="view-all" style="background-color: #99BBD1;">VIEW ALL</a>
+</div>
+
+<div class="display-achievements">
+
+  <button class="arrow_left_ach" onclick="scrolltoLeft()">❮</button>
+
+  <div class="viewport" id="viewport_ach">
+    <div class="scroller_ach" id="scroller_ach">
+      <img src="achievements/ach1.png" style="width: 300px; height: 500px;">
+      <img src="achievements/ach2.png" style="width: 300px; height: 500px;">
+      <img src="achievements/ach3.png" style="width: 300px; height: 500px;">
+      <img src="achievements/ach4.png" style="width: 300px; height: 500px;">
+      <img src="achievements/ach5.png" style="width: 300px; height: 500px;">
+      <img src="achievements/ach6.png" style="width: 300px; height: 500px;">
+      <img src="achievements/ach7.png" style="width: 300px; height: 500px;">
+      <img src="achievements/ach8.png" style="width: 300px; height: 500px;">
+      <img src="achievements/ach9.png" style="width: 300px; height: 500px;">
+
+    </div>
+  </div>
+
+  <button class="arrow_right_ach" onclick="scrolltoRight()">❯</button>
+
+</div>
+
+</div>
+
+<br><br><br><br>
+
+<!-- Event Gallery -->
+<div class="eg-container">
+
+  <!-- LEFT MENU -->
+  <div class="eg-sidebar">
+    <h2>EVENTS GALLERY</h2>
+
+    <ul>
+      <li class="eg-active" onclick="egChange(0)">THOMSO</li>
+      <li onclick="egChange(1)">IITRMS</li>
+      <li onclick="egChange(2)">CONVOCATION</li>
+      <li onclick="egChange(3)">COGNIZANCE</li>
+      <li onclick="egChange(4)">TEDxIITR</li>
+      <li onclick="egChange(5)">INTER-IIT</li>
+    </ul>
+  </div>
+
+  <!-- RIGHT SLIDER -->
+  <div class="eg-slider">
+
+    <button class="eg-btn-left" onclick="egPrev()">❮</button>
+
+    <div class="eg-view">
+      <div class="eg-track" id="egTrack">
+        <img src="events/cogni.jpg">
+        <img src="events/tedx.png">
+        <img src="events/thomso.png">
+      </div>
+    </div>
+
+    <button class="eg-btn-right" onclick="egNext()">❯</button>
+
+    <div class="eg-dots" id="egDots"></div>
+
+  </div>
+
+</div>
+
+<br><br><br><br>
+<!-- Milestones -->
+<div class="milestones">
+  <h2 style="color:#4C4C4C; font-family: Lato;">MILESTONES</h2>
+
+  <div class="content_milestones">
+
+    <!--(Years) -->
+  <div class="dots">
+    <span onclick="goToSlide(0)" class="dot active">2018</span>
+    <span onclick="goToSlide(1)" class="dot">2019</span>
+    <span onclick="goToSlide(2)" class="dot">2020</span>
+    <span onclick="goToSlide(3)" class="dot">2021</span>
+    <span onclick="goToSlide(4)" class="dot">2022</span>
+    <span onclick="goToSlide(5)" class="dot">2023</span>
+    <span onclick="goToSlide(6)" class="dot">2024</span>
+    <span onclick="goToSlide(7)" class="dot">2025</span>
+  </div>
+
+  <!-- Images -->
+  <div class="slides">
+    <img src="milestones/m2018.png" class="slide active">
+    <img src="milestones/m2019.png" class="slide">
+    <img src="milestones/m2020.png" class="slide">
+    <img src="milestones/m2021.png" class="slide">
+    <img src="milestones/m2022.png" class="slide">
+    <img src="milestones/m1.png" class="slide">
+    <img src="milestones/m2024.png" class="slide">
+    <img src="milestones/m2025.png" class="slide">
+  </div>
+
+  
+
+</div>
+  
+</div>
+
+<!-- This is above the footer wala part-->
+<div class="container">
+
+  <!-- NOTICE BOARD -->
+  <div class="notice">
+    <div class="header">
+      <h2>NOTICE BOARD</h2>
+      <span><a href="https://www.iitr.ac.in/support/channeli.html">VIEW ALL</a></span>
+    </div>
+
+    <div class="card">
+      <div class="item">
+        <div class="top">
+          <span>Administration</span>
+          <span>Apr 1, 25</span>
+        </div>
+        <p>Assistant Registrar General Administration</p>
+        <p>Revised rates of minimum wages for outsourced services - reg.</p>
+      </div>
+
+      <div class="item">
+        <div class="top">
+          <span>Administration</span>
+          <span>March 30, 25</span>
+        </div>
+        <p>Assistant Registrar General Administration</p>
+        <p>OM: Extension of the Contract of empanelled advertising agencies</p>
+      </div>
+
+      <div class="item">
+        <div class="top">
+          <span>Administration</span>
+          <span>March 28, 25</span>
+        </div>
+        <p>Assistant Registrar General Administration</p>
+        <p>OM: Extension of Contract Agreement for work hire services</p>
+      </div>
+
+      <div class="item">
+        <div class="top">
+          <span>Administration</span>
+          <span>March 1, 25</span>
+        </div>
+        <p>Assistant Registrar General Administration</p>
+        <p>House Allotment Committee - I</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EVENTS -->
+  <div class="events">
+    <div class="header">
+      <h2>UPCOMING EVENTS</h2>
+      <span><a href="#">VIEW ALL</a></span>
+    </div>
+
+    <div class="event">
+      <div class="date">
+        <h3>16</h3>
+        <span>March</span>
+      </div>
+      <div class="info">
+        <h4>INTERNATION CONFERENCE</h4>
+        <p>Nuclear Theory in Supercomputing Era - 2026 
+            (NTSE-2026)
+        </p>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="date">
+        <h3>17</h3>
+        <span>May</span>
+      </div>
+      <div class="info">
+        <h4>JEE (Advanced) 2026</h4>
+        
+      </div>
+    </div>
+    <div class="event">
+      <div class="date">
+        <h3>07</h3>
+        <span>Dec</span>
+      </div>
+      <div class="info">
+        <h4>IUTAM Symposium on Instabilities and Transitions in Interface- and Field-Driven Flows</h4>
+        <p>December 07–11, 2026
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  
+  <div class="foot">
+    <div class="details">
+      <a href="#">
+      <img src="IITR LOGO.png" alt="IIT Roorkee logo" class="footer-logo" >
+      </a>
+    </br>
+    <a href="https://iitr.ac.in/Institute/How%20To%20Reach%20IIT%20Roorkee.html">How to reach IIT Roorkee <i class="fa-solid fa-location-dot"></i> </a>
+    <a href="#"> +91-1332-285311 <i class="fa-solid fa-phone"></i></a>
+    <a href="#">registar@iitr.ac.in <i class="fa-solid fa-envelope"></i></a>
+
+
+    <div class="social-icons">
+
+      <a href="https://www.facebook.com/IITRoorkee.ICC" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://x.com/iitroorkee" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/school/indian-institute-of-technology-roorkee/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/iitroorkee/?hl=en" aria-label="Instagram"> <i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@IITRoorkeeOfficialChannel" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+</div>
+
+    <div class="explore">
+     <h3>EXPLORE </h3>
+     <a href="https://iitr.ac.in/Administration/index.html">Adminstration</a>
+        <a href="#">Tenders and Quotations</a>
+        <a href="https://iitr.ac.in/SCSP/Home/SCSP.html">Awards and Honours</a>
+<a href="https://www.iitr.ac.in/rti/">RTI</a>
+<a href="https://iitr.ac.in/Departments/index.html">Departments</a>
+<a href="https://iitr.ac.in/sric/">Industry Consultation</a>
+<a  href="https://ir.iitr.ac.in/">Internation students</a>
+    </div>
+
+<div class="rankings">
+    <h3>RANKINGS</h3>
+    <a href="https://iitr.ac.in/Institute/NIRF.html">NIRF</a>
+    <a href="https://iitr.ac.in/Institute/ARIIA.html">ARRIA</a>
+    <a href="https://www.topuniversities.com/universities/indian-institute-technology-roorkee-iitr">QS</a>
+
+</div>
+
+
+<div class="Quick_Access">
+    <h3>QUICK ACCESS</h3>
+    <a href="https://alumni.iitr.ac.in/donate">Donate</a>
+    <a href="https://www.iitr.ac.in/support/">Support@IITR</a>
+    <a href="https://channeli.in/auth/login?next=/feed">Intranet Portal</a>
+    <a href="#">Give Feedback</a>
+    <a href="https://newwebmail.iitr.ac.in/?session=f9d8c490c90d969687b99fed91ea214ac20ad4d76fe97759aa27a0c99bff6710a4b31bf5fc6f20e57bb20bf048bb3084c20ad4d76fe97759aa27a0c99bff6710">Web Mail</a>
+    <a href="https://www.iitr.ac.in/internalcomplaintscommittee/">Internal Complaints Committee</a>
+    <a href="https://ghbooking.iitr.ac.in/">Book Guest House</a>
+    <a href="https://www.iitsystem.ac.in/">IIT Council</a>
+    <a href="https://www.education.gov.in/">MoE</a>
+</div>
+
+<div class="Quick_links">
+    <h3>QUICK LINKS</h3>
+    <a href="https://www.iitr.ac.in/safety/index.html">Safety</a>
+    <a href="https://iitr.ac.in/security/index.html">Security</a>
+    <a href="https://www.iitr.ac.in/hindicell/index.html">Hindi Cell</a>
+   
+</div>
+
+<div class="bottom">
+    <p>Copyright 2025, Institute Computer Centre, IIT Roorkee</p>
+</div>
+<div>
+    <p>Made with Love by:
+Information Management Group, IITR</p>
+</div>
+
+  </div>
+</footer>
+
+<!-- Java Script  -->
+<script>
+function setDark() {
+  document.body.classList.add("dark");
+}
+
+function setLight() {
+  document.body.classList.remove("dark");
+}
+function scrollToLeft() {
+  scroller.scrollBy({
+    left: -1000,
+    behavior: "smooth"
+  });
+}
+
+function scrollToRight() {
+  scroller.scrollBy({
+    left: 1000,
+    behavior: "smooth"
+  });
+}
+
+
+const scroller_ach = document.getElementById("scroller_ach");
+const viewport_ach = document.getElementById("viewport_ach");
+
+function scrolltoLeft() {
+  // scroll the visible viewport by its width
+  viewport_ach.scrollBy({
+    left: -viewport_ach.clientWidth,
+    behavior: "smooth"
+  });
+}
+
+function scrolltoRight() {
+  viewport_ach.scrollBy({
+    left: viewport_ach.clientWidth,
+    behavior: "smooth"
+  });
+}
+
+/* Milestones slide control: show one image per year */
+function goToSlide(index) {
+  const slides = document.querySelectorAll('.slides .slide');
+  const dots = document.querySelectorAll('.dots .dot');
+  if (!slides.length) return;
+  if (index < 0) index = 0;
+  if (index >= slides.length) index = slides.length - 1;
+  slides.forEach(s => s.classList.remove('active'));
+  dots.forEach(d => d.classList.remove('active'));
+  slides[index].classList.add('active');
+  if (dots[index]) dots[index].classList.add('active');
+}
+
+// initialize first slide on load
+document.addEventListener('DOMContentLoaded', function() {
+  goToSlide(0);
+});
+
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+
+function goToSlide(index) {
+  slides.forEach(s => s.classList.remove("active"));
+  dots.forEach(d => d.classList.remove("active"));
+
+  slides[index].classList.add("active");
+  dots[index].classList.add("active");
+}
+
+let egIndex = 0;
+
+const egTrack = document.getElementById("egTrack");
+const egImages = document.querySelectorAll(".eg-track img");
+const egDotsContainer = document.getElementById("egDots");
+const egMenu = document.querySelectorAll(".eg-sidebar li");
+
+// dots making
+egImages.forEach((_, i) => {
+  const dot = document.createElement("span");
+  dot.onclick = () => egGo(i);
+  egDotsContainer.appendChild(dot);
+});
+
+const egDots = document.querySelectorAll(".eg-dots span");
+
+function egUpdate() {
+  egTrack.style.transform = `translateX(-${egIndex * 100}%)`;
+
+  egDots.forEach(d => d.classList.remove("eg-active"));
+  egDots[egIndex].classList.add("eg-active");
+}
+
+function egNext() {
+  egIndex = (egIndex + 1) % egImages.length;
+  egUpdate();
+}
+
+function egPrev() {
+  egIndex = (egIndex - 1 + egImages.length) % egImages.length;
+  egUpdate();
+}
+
+function egGo(i) {
+  egIndex = i;
+  egUpdate();
+}
+
+function egChange(i) {
+  egMenu.forEach(m => m.classList.remove("eg-active"));
+  egMenu[i].classList.add("eg-active");
+
+  egIndex = 0;
+  egUpdate();
+}
+
+egUpdate();
+</script>
+
+</body>
+</html>
